@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ravibras | LPR Presentation</title>
+    <!-- Import Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Decorator Background -->
+        <div class="bg-decoration"></div>
+
+        <!-- Navigation -->
+        <nav class="glass-header">
+            <div class="container nav-content">
+                <div class="brand">
+                    <img src="/images/logo_ravibras.png" alt="Ravibras Logo" class="brand-logo">
+                    <span class="brand-text">LPR <span class="text-gradient">IA</span></span>
+                </div>
+                <div class="nav-links">
+                    <a href="#intro">Introdução</a>
+                    <a href="#scenario">Cenário</a>
+                    <a href="#solution">Solução</a>
+                    <a href="#specs">Especificações</a>
+                    <a href="#investment">Investimento</a>
+                    <button id="print-pdf" class="btn-print">PDF</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HERO SECTION -->
+        <header id="intro" class="hero-section">
+            <div class="container hero-content">
+                <div class="hero-text" data-aos="fade-up">
+                    <span class="badge">Inovação em Segurança</span>
+                    <h1 style="text-wrap: balance;">Projeto de Otimização de Controle de <br>Acesso Veicular <span
+                            class="text-gradient">com Reconhecimento <br>de Placas e Veículos</span></h1>
+                    <p class="lead" style="text-wrap: balance;">
+                        Transformando o controle de acesso em um ativo estratégico da Ravibras.
+                        Mitigação de riscos proativa e inteligência logística através de IA de ponta.
+                    </p>
+
+                    <div class="hero-credits" data-aos="fade-up" data-aos-delay="300">
+                        <div class="credit-item">
+                            <span class="credit-label">Idealização e Solicitação</span>
+                            <span class="credit-name">Mario Parisotto</span>
+                            <span class="credit-title">Ger. Industrial</span>
+                        </div>
+                        <div class="credit-divider"></div>
+                        <div class="credit-item">
+                            <span class="credit-label">Desenvolvimento Tec.</span>
+                            <span class="credit-name">Marcelo Gouvêa</span>
+                            <span class="credit-title">IT Consultant</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <button class="btn btn-premium"
+                            onclick="document.querySelector('#scenario').scrollIntoView({behavior: 'smooth'})">Explorar
+                            Proposta</button>
+                    </div>
+                </div>
+                <!-- Placeholder for a high-tech visual/image -->
+                <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
+                    <div class="camera-lens-effect"></div>
+                    <!-- We will generate a specific image later, for now a CSS abstract shape -->
+                    <div class="abstract-shape">
+                        <div class="shape-inner"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- CURRENT SCENARIO SECTION -->
+        <section id="scenario" class="scenario-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Análise de Cenário</h2>
+                    <p class="subtitle">Desafios no Controle de Acesso Veicular</p>
+                    <p class="description">
+                        Em grandes empresas, um sistema de controle de acesso veicular eficiente e confiável é um
+                        elemento estratégico fundamental.
+                        Contudo, o cenário atual, predominantemente manual, apresenta desafios críticos.
+                    </p>
+                </div>
+
+                <div class="cards-grid">
+                    <!-- Card 1 -->
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-icon error-icon">⚠️</div>
+                        <h3>Risco de Falha Humana</h3>
+                        <p>A identificação visual e registro manual em planilhas estão sujeitos a erros, inconsistências
+                            e desatenção, criando brechas na segurança e rastreabilidade.</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-icon warning-icon">📊</div>
+                        <h3>Baixa Capacidade de Auditoria</h3>
+                        <p>Controles manuais dificultam a extração de dados confiáveis. Relatórios de fluxo e auditorias
+                            tornam-se processos complexos e morosos.</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-icon security-icon">🔓</div>
+                        <h3>Vulnerabilidades de Segurança</h3>
+                        <p>A identificação de veículos não autorizados ou em listas de restrição é lenta e reativa
+                            quando dependente exclusivamente da vigilância humana.</p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card-icon time-icon">⏳</div>
+                        <h3>Ineficiência Operacional</h3>
+                        <p>Gargalos na portaria devido a conferências manuais geram atrasos significativos, impactando a
+                            logística interna e a experiência de todos.</p>
+                    </div>
+                </div>
+
+                <!-- ADDED IMAGE: Comparison -->
+                <div class="feature-visual-full" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="/images/slide_comparison.png" alt="Monitoramento vs Identificação"
+                        class="slide-img shadow-lg">
+                </div>
+
+                <div class="scenario-conclusion" data-aos="fade-up" data-aos-delay="600">
+                    <p>Esse cenário evidencia a necessidade de uma solução <strong>automatizada, integrada e
+                            inteligente</strong>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROPOSED SOLUTION SECTION -->
+        <section id="solution" class="solution-section">
+            <div class="container">
+                <!-- ADDED IMAGE: Intro/Product Hero -->
+                <div class="section-image-header" data-aos="fade-up">
+                    <img src="/images/slide_intro_solution.png" alt="VIP 5460 LPR IA Revolução"
+                        class="slide-img-hero shadow-lg">
+                </div>
+
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Tecnologia Embarcada</h2>
+                    <p class="description">
+                        A tecnologia de inteligência artificial embarcada oferece uma solução precisa e automatizada.
+                        Ao contrário da simples captura de imagens, este equipamento cria um sistema de gestão de acesso
+                        integrado e inteligente.
+                    </p>
+                </div>
+
+                <!-- ADDED IMAGES: Deep Dive Features -->
+                <div class="solution-visuals-grid">
+                    <div class="visual-item" data-aos="fade-right">
+                        <img src="/images/slide_edge_ai.png" alt="Inteligência na Borda" class="slide-img shadow-md">
+                    </div>
+                    <div class="visual-item" data-aos="fade-left">
+                        <img src="/images/slide_metadata.png" alt="Metadados Detalhados" class="slide-img shadow-md">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENEFITS SECTION -->
+        <section id="benefits" class="benefits-section">
+            <div class="container">
+                <div class="section-header white-header" data-aos="fade-up">
+                    <h2>Análise Estratégica</h2>
+                    <p class="subtitle text-white">Benefícios e Valor Agregado</p>
+                    <p class="description text-light">
+                        Implementar a VIP 5460 LPR IA transcende a atualização de equipamentos; é um salto de maturidade
+                        para a segurança corporativa.
+                    </p>
+                </div>
+
+                <div class="benefits-grid">
+                    <!-- Benefit 1 -->
+                    <div class="benefit-item" data-aos="flip-up" data-aos-delay="100">
+                        <div class="benefit-header">🛡️ Segurança Proativa</div>
+                        <p>Do reativo ao proativo: bloqueio instantâneo de veículos não autorizados e alertas em tempo
+                            real para a central.</p>
+                    </div>
+
+                    <!-- Benefit 2 -->
+                    <div class="benefit-item" data-aos="flip-up" data-aos-delay="200">
+                        <div class="benefit-header">⚡ Eficiência Operacional</div>
+                        <p>Eliminação de filas e gargalos com automação de portões, permitindo que a equipe foque em
+                            atividades de alto valor.</p>
+                    </div>
+
+                    <!-- Benefit 3 -->
+                    <div class="benefit-item" data-aos="flip-up" data-aos-delay="300">
+                        <div class="benefit-header">🧠 Inteligência de Dados</div>
+                        <p>Registro histórico completo para auditorias, investigações e otimização logística baseada em
+                            dados reais.</p>
+                    </div>
+
+                    <!-- Benefit 4 -->
+                    <div class="benefit-item" data-aos="flip-up" data-aos-delay="400">
+                        <div class="benefit-header">💎 Robustez Industrial</div>
+                        <p>Certificações <strong>IP67</strong> (água/poeira) e <strong>IK10</strong> (antivandalismo)
+                            para máxima durabilidade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECHNICAL SPECIFICATIONS DEEP DIVE -->
+        <section id="specs" class="specs-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Especificações Técnicas</h2>
+                    <p class="subtitle">Detalhes da Engenharia</p>
+                </div>
+
+                <!-- ADDED IMAGE: Stats Header -->
+                <div class="stats-visual full-width" data-aos="zoom-in" style="margin-bottom: 3rem;">
+                    <img src="/images/slide_stats.png" alt="Estatísticas de Performance" class="slide-img shadow-lg"
+                        style="width: 100%; border-radius: 12px;">
+                </div>
+
+                <div class="tech-layout">
+                    <!-- Installation Diagram Image -->
+                    <div class="tech-visual-col" data-aos="fade-right">
+                        <div class="tech-image-container">
+                            <img src="/images/lpr_installation_diagram.png" alt="Diagrama de Instalação LPR"
+                                class="diagram-img">
+                            <span class="img-caption">Diretrizes de Instalação Vertical e Horizontal</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-grid-col">
+                        <!-- Spec Card 1: Optical -->
+                        <div class="tech-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="tech-header">
+                                <span class="tech-icon">📷</span>
+                                <h4>Sistema Óptico</h4>
+                            </div>
+                            <ul>
+                                <li><strong>Sensor:</strong> 1/1.8" 4MP CMOS (Alta Sensibilidade)</li>
+                                <li><strong>Lente:</strong> Varifocal Motorizada 2.7-12mm</li>
+                                <li><strong>WDR Real:</strong> 140 dB (Ideal para contra-luz e faróis)</li>
+                                <li><strong>Visão Noturna:</strong> IR Inteligente até 30 metros</li>
+                            </ul>
+                        </div>
+
+                        <!-- Spec Card 2: AI & Analytics -->
+                        <div class="tech-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="tech-header">
+                                <span class="tech-icon">🧠</span>
+                                <h4>Inteligência Artificial</h4>
+                            </div>
+                            <ul>
+                                <li><strong>Taxa de Captura:</strong> >95% (até 60 km/h)</li>
+                                <li><strong>Metadados:</strong> Placa, Cor, Marca, Tipo do Veículo</li>
+                                <li><strong>Banco de Dados:</strong> Até 110.000 placas (Allow/Blocklist)</li>
+                                <li><strong>Operação:</strong> Standalone ou Integrada</li>
+                            </ul>
+                        </div>
+
+                        <!-- Spec Card 3: Resistance -->
+                        <div class="tech-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="tech-header">
+                                <span class="tech-icon">🛡️</span>
+                                <h4>Resistência e Rede</h4>
+                            </div>
+                            <ul>
+                                <li><strong>Proteção:</strong> IP67 (Água/Poeira) e IK10 (Antivandalismo)</li>
+                                <li><strong>Compressão:</strong> H.265+ (Economia de banda e estocagem)</li>
+                                <li><strong>Conectividade:</strong> Gigabit Ethernet 10/100/1000 Base-T</li>
+                                <li><strong>Protocolos:</strong> Onvif (S/G/T), Intelbras-1, RTSP</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INVESTMENT & FEASIBILITY SECTION -->
+        <section id="investment" class="investment-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Investimento e Viabilidade</h2>
+                    <p class="subtitle">Análise de Custo-Benefício</p>
+                </div>
+
+                <div class="investment-grid">
+                    <!-- Hardware Cost -->
+                    <div class="investment-card" data-aos="fade-right">
+                        <div class="invest-icon">💰</div>
+                        <div class="invest-details">
+                            <h3>Hardware de Alta Performance</h3>
+                            <p class="invest-value">R$ 6.500 — R$ 7.000</p>
+                            <p class="invest-info">Estimativa por unidade (VIP 5460 LPR IA). Tecnologia de ponta com IA
+                                embarcada.</p>
+                        </div>
+                    </div>
+
+                    <!-- Installation/Consultancy -->
+                    <div class="investment-card" data-aos="fade-left">
+                        <div class="invest-icon">🛠️</div>
+                        <div class="invest-details">
+                            <h3>Implementação Estratégica</h3>
+                            <p class="invest-value">Otimização de Custos</p>
+                            <ul class="invest-list">
+                                <li>Utilização integral da infraestrutura existente.</li>
+                                <li>Consultoria especializada Ravibras.</li>
+                                <li>Execução técnica em conjunto com Artifice.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roi-teaser" data-aos="zoom-in" data-aos-delay="200">
+                    <p><strong>Destaque:</strong> O aproveitamento da infraestrutura atual permite um <strong>baixo
+                            CAPEX</strong> de implantação, acelerando o retorno sobre o investimento (ROI).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONCLUSION / CTA -->
+        <section id="conclusion" class="conclusion-section">
+            <div class="container">
+                <div class="conclusion-content" data-aos="zoom-in">
+                    <h2 class="text-gradient">Conclusão Estratégica</h2>
+                    <p class="conclusion-text">
+                        A implementação da <strong>VIP 5460 LPR IA</strong> na Ravibras não é apenas um upgrade
+                        tecnológico; é um passo decisivo em direção à <strong>Indústria 4.0</strong>.
+                        <br><br>
+                        Ao integrar Inteligência Artificial ao controle de acesso, eliminamos a falha humana, blindamos
+                        o perímetro e geramos dados valiosos para a logística.
+                        Esta solução se paga através da eficiência operacional e da mitigação de riscos.
+                        <br><br>
+                        <strong>O futuro da segurança na Ravibras começa agora.</strong>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container footer-content">
+                <img src="./public/images/logo_ravibras.png" alt="Ravibras Logo" class="footer-logo">
+                <p>&copy; 2026 Ravibras Embalagem da Amazônia Ltda - Tecnologia da Informação</p>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
