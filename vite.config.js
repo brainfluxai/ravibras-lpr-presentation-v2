@@ -2,15 +2,12 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
     server: {
-        host: true
+        host: '0.0.0.0'
     },
     preview: {
-        host: true,
+        host: '0.0.0.0',
         port: 4173,
         strictPort: false,
-        allowedHosts: [
-            'presentations.lawdata.com.br',
-            '.lawdata.com.br'
-        ]
+        allowedHosts: 'all'
     }
 })
