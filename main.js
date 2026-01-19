@@ -9,6 +9,16 @@ AOS.init({
   offset: 50
 });
 
+// Force start at Inicio (top) on load
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  window.scrollTo(0, 0);
+  AOS.refresh();
+});
+
 // Parallax or interaction effects
 document.addEventListener('mousemove', (e) => {
   const shape = document.querySelector('.abstract-shape');
